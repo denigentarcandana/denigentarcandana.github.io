@@ -1,0 +1,102 @@
+@font-face {
+    font-family: sirukota;
+    src: url('Sirukota.ttf');
+}
+
+@font-face {
+    font-family: varela-round;
+    src: url('varela-round.regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #D8D9E7;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background: #29293f;
+    text-align: center;
+    font-size: 10px;
+    font-family: varela-round;
+}
+
+.header {
+    width: 100%;
+    padding: 50px;
+    background: #2e2e48;
+    border-bottom: 2px solid #454564;
+    border-radius: 0 0 15px 15px;
+}
+
+.logo {
+    border-radius: 100%;
+    border: 2px solid #fff;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    color: #fff;
+    font-family: sirukota;
+    margin-bottom: 5px;
+}
+
+.media i {
+    font-size: 25px;
+    color: #fff;
+    margin: 20px;
+}
+
+.menu {
+    height: 225px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #2e2e48;
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px 15px 0 0;
+    border-top: 2px solid #454564;
+    overflow-y: scroll;
+    font-size: 15px;
+}
+
+.menu li {
+    margin: 25px;
+    padding: 10px;
+    background: #29293f;
+    border-radius: 5px;
+    border: 2px solid #454564;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    
+    .header {
+        border: 2px solid #454564;
+        border-radius: 15px;
+    }
+
+    .menu {
+        height: 300px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        border-radius: 15px;
+        border: 2px solid #454564;
+        border-right: none;
+        margin: 25px;
+    }
+}
